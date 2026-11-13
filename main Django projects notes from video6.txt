@@ -1,0 +1,30 @@
+Django 6:
+main Django projects start from jango video 6 ->
+
+core-model-admin-views-urls
+
+video 7: inclusion of html tags like index.html in Django.
+	you click html template at the bottom then shift and exclamation mark to load html. for you to use
+
+html, use {% Load static %}.done
+	learned inclusion of Django css
+	formatting features in html
+	the formatted features only affects frontend
+
+Django 8: Search and filter products in database
+	  Describes the Description of products
+	  TeAcher was defeated. to confirm from next chapter
+
+Django 9. Description worked
+	  coding of slug(description of products at text bar)
+	  Demonstrates how to add images on front end.
+	  To load images in Django,install pillow library.
+	  download Django media files and paste to config -settings i.e MEDIA_URL = '/media/'and
+          MEDIA_ROOT = BASE_DIR / 'media'
+          copy url pattern: to project(core) and projects urls i.e. urlpatterns += static(settings.MEDIA_URL,             
+          document_root=settings.MEDIA_ROOT)
+	  uploaded pictures od Django admin.
+	
+
+
+ 

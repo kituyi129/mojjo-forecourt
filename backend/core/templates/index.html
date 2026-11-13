@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href = "{% static 'style.css' %}">
+  
+</head>
+<body>
+    <p><h3>MOJJO FUEL App</h3></P>
+    <h4>PETROL STATIONS ON SALE</h4>
+    
+    <div class="container">
+        
+        {% for product in products %}
+            <div class="card">
+                 {% comment %} <img src = "{{ product.image.url }}"> {% endcomment %}
+                
+                    <p>{{ product.Title }}</p>
+                    {% comment %} <p>{{ product.Description }}</p> {% endcomment %}
+                    <p>{{ product.Stock }}</p>
+                    <p>{{ product.Price }}</p>
+
+                    <a href="{% url 'product_details' product.Slug %}"><button> Click To View Details </button> </a> 
+                    
+            </div>
+           {% empty %}
+            <p>No stations at the moment</p>
+        {% endfor %} 
+        <hr>
+    </div>
+        
+</body>
+</html>

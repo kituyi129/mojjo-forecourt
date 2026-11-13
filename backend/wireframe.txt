@@ -1,0 +1,10 @@
+# petro; stations ecommerce market
+how much you have
+location
+brand
+products
+size
+purchase type -cintract, lease,one off
+contacts
+mode of pay
+reveipts
